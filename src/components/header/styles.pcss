@@ -1,0 +1,70 @@
+@import "../../util.pcss";
+
+.wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 56px;
+    background: var(--white-900);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+.logo {
+    display: block;
+    width: 100px;
+
+    color: var(--black-800);
+    font-size: 16px;
+    line-height: 56px;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    display: block;
+
+    &:after {
+        display: table;
+        clear: both;
+    }
+
+    & > li {
+        float: left;
+        display: block;
+    }
+}
+
+.button {
+    display: block;
+    width: 200px;
+
+    color: var(--paprika-400);
+    font-size: 16px;
+    text-align: center;
+    line-height: 56px;
+
+    &:hover .innerMenu {
+        display: block;
+        width: 300px;
+    }
+
+    & > span {
+        display: block;
+    }
+
+    & > span:hover {
+        border-bottom: 1px solid red;
+    }
+}
+
+.innerMenu {
+    display: none;
+
+    & > div {
+        display: inline-block;
+        width: 150px;
+        text-align: center;
+    }
+}
